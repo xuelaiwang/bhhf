@@ -14,6 +14,9 @@ const scripts = {
   output: './dist/js/main.js',
   dest: './dist/js',
 };
+
+
+
 const styles = {
   src: 'src/css/*.css',
   enter: '',
@@ -28,7 +31,6 @@ const images = {
   src: 'src/images/**/*.{jpg,png,gif,jpeg}',
   dest: './dist/images',
 };
-
 
 
 
