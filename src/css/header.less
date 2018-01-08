@@ -1,0 +1,54 @@
+.header{
+    height: 90px;
+    width: 100%;
+    margin: 0 auto;
+    .company{
+        width: 162px;
+        height: 77px;
+        display: block;
+        float: left;
+        margin: 6px 0 6px 0;
+        background-color: red;
+    }
+    .navlist{
+        float: right;
+        padding-right: 48px;
+        ul{
+            li{
+                float: left;
+                margin-top: 32px;
+                padding-bottom: 10px;
+                margin-right: 32px;
+                a{
+                    color:#333;
+                    font-size: 18px;
+                }
+            }
+            li:last-child{
+                padding-right: 0;
+            }
+            li.active{
+                border-bottom: 4px solid #323232;
+                a{
+                    color: #333;
+                }
+            }
+        }
+    }
+    .contactmobile{
+        float: right;
+        // line-height: 90px;
+        .phonenumber{
+            float: left;
+            display: inline-block;
+            width: 26px;
+            height: 26px;
+            padding-right: 10px;
+            margin-top: 32px;
+        }
+        span{
+            float: left;
+            margin-top: 35px;            
+        }
+    }
+}

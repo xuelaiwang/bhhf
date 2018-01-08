@@ -1,0 +1,92 @@
+
+@import './reset.less';
+@import './header.less';
+@import './banner.less';
+@import './content.less';
+@import './footer.less';
+.container{
+    background-color: #fff;
+    min-width: 1024px;
+    @media (min-width: 1024px){ 
+        .header{
+            width: 100%;
+            margin: 0 auto;
+        }
+        .content{
+            .contentbox{
+                width: 90%;
+            }
+        }
+    }
+    @media (min-width: 1100px) {
+        .header{
+            width: 90%;
+            margin: 0 auto;
+        }
+        .content{
+            .contentbox{
+                width: 90%;
+            }
+        }
+    } 
+    @media (min-width: 1280px) { 
+        .header{
+            width: 80%;
+            margin: 0 auto;
+        }
+        .content{
+            .contentbox{
+                width: 100%;
+                ul{
+                    width: 1132px;
+                    li{
+                        width: 364px;
+                        margin-right: 20px;
+                    }
+                }
+                li:nth-child(3){
+                    margin-right: 0;
+                }
+            }
+        }
+    } 
+
+    @media (min-width: 1366px) {
+        .header{
+            width: 80%;
+            margin: 0 auto;
+        }
+        .content{
+            
+        }
+    }  
+
+    @media (min-width: 1440px) {
+        .header{
+            width: 75%;
+            margin: 0 auto;
+        }
+        .content{
+            
+        }
+    } 
+
+    @media (min-width: 1680px) {
+        .header{
+            width: 75%;
+            margin: 0 auto;
+        }
+        .content{
+            
+        }
+    } 
+    @media (min-width: 1920px) {
+        .header{
+            width: 70%;
+            margin: 0 auto;
+        }
+        .content{
+            
+        }
+    } 
+}

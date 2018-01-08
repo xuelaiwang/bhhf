@@ -9,6 +9,7 @@ const livereload = require('gulp-livereload');
 const uglify = require('gulp-uglify');
 const cleanCSS = require('gulp-clean-css');
 const htmlmin = require('gulp-htmlmin');
+const less = require("gulp-less")
 const scripts = {
   src: 'src/js/*.js',
   output: './dist/js/main.js',
@@ -18,7 +19,7 @@ const scripts = {
 
 
 const styles = {
-  src: 'src/css/*.css',
+  src: 'src/css/*.less',
   enter: '',
   output: './dist/css/main.css',
   dest: './dist/css',
@@ -54,6 +55,7 @@ gulp.task('css', () => {
         'Opera >= 12',
       ],
     }))
+    .pipe(less())
     .pipe(gulp.dest(styles.dest))
     .pipe(connect.reload());
 });
