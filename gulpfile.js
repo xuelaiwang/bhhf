@@ -74,6 +74,7 @@ gulp.task('cssrelease', () => {
         'Opera >= 12',
       ],
     }))
+    .pipe(less())
     .pipe(cleanCSS())
     .pipe(gulp.dest(styles.dest))
 });
