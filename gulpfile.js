@@ -20,7 +20,7 @@ const scripts = {
 
 const styles = {
   src: 'src/css/*.less',
-  enter: '',
+  enter: ['src/css/*.less','src/pagecss/**/*.less'],
   output: './dist/css/main.css',
   dest: './dist/css',
 };
@@ -124,7 +124,7 @@ gulp.task('release', ['htmlrelease', 'cssrelease', 'jsrelease','images']);
 gulp.task('watch', () => {
   // livereload.listen();
   gulp.watch(scripts.src, ['js']);
-  gulp.watch(styles.src, ['css']);
+  gulp.watch(styles.enter, ['css']);
   gulp.watch(images.src, ['images']);
   gulp.watch(html.src, ['html']);
 });
